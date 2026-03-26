@@ -1,4 +1,5 @@
-import Header from '../components/Header';
+// Depois (funciona no Vercel)
+import Header from '../components/header';
 import Footer from '../components/footer';
 import { Outlet } from 'react-router-dom';
 
