@@ -1,5 +1,4 @@
 
-import LogoFooter from '../assets/logo-footer.svg';
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
@@ -8,7 +7,8 @@ const Footer = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
         <div>
-          <img src={LogoFooter} alt="Drip Store Logo" className="h-8 mb-4" />
+          {/* Usando a imagem direto do public */}
+          <img src="/assets/logo-footer.svg" alt="Drip Store Logo" className="h-8 mb-4" />
           <p className="text-sm text-gray-400 mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
           </p>
@@ -49,7 +49,7 @@ const Footer = () => {
           </p>
           <p className="text-sm text-gray-400 mt-2">(85) 3051-3411</p>
         </div>
-      </div>.
+      </div>
 
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-xs text-gray-500">
         © 2022 Digital College

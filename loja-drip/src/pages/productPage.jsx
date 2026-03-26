@@ -1,6 +1,6 @@
 import { useState, useMemo } from 'react'; 
 import { products } from '../data/products';
-import ProductListingList from '../components/AbaProdutos/productListingList';
+import ProductListingList from "../components/Abaproductos/ProductListingList";
 import { Link, useLocation } from 'react-router-dom';
 
 const ProductPage = () => {

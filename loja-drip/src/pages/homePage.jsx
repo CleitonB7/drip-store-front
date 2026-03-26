@@ -6,9 +6,10 @@ import { IoShirtOutline } from "react-icons/io5";
 import { PiBaseballCapLight, PiHeadphonesLight, PiPantsLight } from "react-icons/pi";
 import { GiConverseShoe } from "react-icons/gi";
 import { FaArrowLeft } from "react-icons/fa"; 
-import airJordanImg from '../assets/Laye 1.png';
+import airJordanImg from '../assets/airJordan.png'; // renomeie a imagem para 'airJordan.png'
 import { useNavigate } from 'react-router-dom';
 
+// Ícones de categorias
 const categoryIcons = [
   { icon: <IoShirtOutline size={40} />, label: "Camisetas" },
   { icon: <PiPantsLight size={40} />, label: "Calças" },
@@ -17,6 +18,7 @@ const categoryIcons = [
   { icon: <GiConverseShoe size={40} />, label: "Tênis" },
 ];
 
+// Dados dos produtos
 const productsData = [
   { id: 1, name: "Nike Air Max 270", image: "https://images.tcdn.com.br/img/img_prod/740066/tenis_nike_air_max_270_react_optical_preto_cinza_389_1_20200120160045.jpg", price: 200, priceDiscount: 149.9, category: "Tênis" },
   { id: 2, name: "Adidas Ultraboost", image: "https://authenticfeet.vtexassets.com/arquivos/ids/434723-800-800?v=638562278565370000&width=800&height=800&aspect=true", price: 200, category: "Tênis", priceDiscount: 180 },
@@ -60,7 +62,7 @@ const HomePage = () => {
         </h2>
 
         <div className="grid sm:grid-cols-4 md:grid-cols-3 gap-3 px-2 md:px-20 lg:px-40 xl:px-14.5">
-          {[ "/collection-1.png", "/collection-2.png", "/collection-3.png" ].map((image, index) => (
+          {["/collection-1.png", "/collection-2.png", "/collection-3.png"].map((image, index) => (
             <div key={index} className="relative overflow-visible bg-white rounded-xl shadow aspect-square">
               <img src={image} alt={`Coleção ${index + 1}`} className="w-full h-full object-contain p-4" />
               <div className="absolute top-2 left-4 bg-lime-200 text-[12px] font-bold text-gray-900 px-3 py-0.75 rounded-full z-10">
