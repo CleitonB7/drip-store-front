@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Layout from './layout';
 import Section from '../components/section';
-import ProductCard from "./Abaproductos/ProductCardList.jsx";
+import ProductCard from "../Abaproductos/ProductCardList.jsx"; // ajuste caminho se necessário
 
 const allProducts = [
   {
@@ -60,6 +60,7 @@ const ProductListingPage = () => {
     <Layout>
       <div className="flex flex-col lg:flex-row gap-6 px-4 sm:px-6 md:px-8 py-6 w-full">
 
+        {/* Filtro e Ordenação */}
         <aside className="w-full lg:w-77 shrink-0">
           <label htmlFor="order-select" className="block mb-2 text-gray-700 text-sm">
             Ordenar por
@@ -91,12 +92,23 @@ const ProductListingPage = () => {
           </div>
         </aside>
 
+        {/* Lista de Produtos */}
         <main className="flex-1 w-full">
           <Section 
             title={`Total de produtos encontrados: ${sortedProducts.length}`} 
             titleAlign="left"
           >
-            <ProductListingList products={sortedProducts} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {sortedProducts.map(product => (
+                <ProductCard 
+                  key={product.id} 
+                  name={product.name}
+                  image={product.image}
+                  price={product.price}
+                  priceDiscount={product.priceDiscount}
+                />
+              ))}
+            </div>
           </Section>
         </main>
       </div>
