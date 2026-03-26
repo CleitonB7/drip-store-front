@@ -6,7 +6,7 @@ import { IoShirtOutline } from "react-icons/io5";
 import { PiBaseballCapLight, PiHeadphonesLight, PiPantsLight } from "react-icons/pi";
 import { GiConverseShoe } from "react-icons/gi";
 import { FaArrowLeft } from "react-icons/fa"; 
-import airJordanImg from '../assets/airJordan.png'; // renomeie a imagem para 'airJordan.png'
+import airJordanImg from '../assets/hero.png'; // renomeie a imagem para 'airJordan.png'
 import { useNavigate } from 'react-router-dom';
 
 // Ícones de categorias
