@@ -1,5 +1,3 @@
-
-import { useContext } from "react";
 import { useCart } from "../contexts/cartContext";
 
 const BuyBox = ({
@@ -13,7 +11,7 @@ const BuyBox = ({
   product, 
   children,
 }) => {
-  const { addToCart } = useContext(useCart);
+  const { addToCart } = useCart(); // ✅ CORRETO
 
   const handleAddToCart = () => {
     addToCart(product); 
