@@ -1,7 +1,7 @@
 import { useState, useMemo } from 'react'; 
 import Section from '../components/section';
 import Hero from '../components/hero';
-import ProductListing from '../components/HomePage/productListing';
+import ProductListing from "../components/HomePage/ProductListing";
 import { IoShirtOutline } from "react-icons/io5";
 import { PiBaseballCapLight, PiHeadphonesLight, PiPantsLight } from "react-icons/pi";
 import { GiConverseShoe } from "react-icons/gi";

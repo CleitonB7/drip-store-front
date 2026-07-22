@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import ProductCard from "./Abaproductos/productCardList";
+import ProductCard from "./Abaproductos/ProductCardList";
 
 const RelatedProducts = ({ currentProduct, allProducts }) => {
   const related = allProducts.filter(p => 
