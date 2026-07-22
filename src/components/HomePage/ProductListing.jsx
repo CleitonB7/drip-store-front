@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import { HiArrowNarrowRight } from "react-icons/hi";
-import ProductCard from "../HomePage/productCard";
+import ProductCard from "./ProductCard";
 
 const ProductListing = ({ products }) => {
   const navigate = useNavigate();
